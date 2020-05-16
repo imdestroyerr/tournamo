@@ -1,0 +1,139 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body
+{
+    font-family: montserrat;
+    background-color:#0A0809;
+}
+nav
+{
+   background:linear-gradient(to right,orange,red);
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid orange;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+nav ul
+{
+float:right;
+margin-right: 20px;
+}
+nav ul li
+{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 0px;
+}
+nav ul li a
+{
+    color:white;
+    font-size: 17px;
+    text-transform: capitalize;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+a.active,a:hover
+{
+    background: #111;
+    transition: .5s;
+}
+.menu
+{
+    display: none;
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin-right: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.menuclose
+{
+    display: none;
+    float: right;
+    font-size: 30px;
+    color: black;
+    float: right;
+    margin-right: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+/*section.cover
+{
+    background: url(gamersgarage.jpg) no-repeat;
+    background-size: contain;
+    height: calc(100vh - 80px);
+    background-position-x: center;
+    position:sticky;
+    z-index: 0;
+}*/
+div.homescreen
+{
+    width: 100%;
+    height: 100vh;
+
+}
+
+@media (max-width:950px)
+{
+    label.logo
+    {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a
+    {
+        font-size: 16px;
+    }
+}
+@media(max-width:850px)
+{
+    .menu
+    {
+        display: block;
+    }
+   .logo
+   {
+      width: 300px;
+      height:70px;
+      margin-top: 10px;
+   }
+    ul
+    {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #111;
+        top: 80px;
+        left: 0;
+        text-align: center;
+    }
+    
+    nav
+    {
+        border-bottom: 3px solid orange;
+    }
+    nav ul li
+    {
+        display: block;
+    }
+    nav ul li a
+    {
+        font-size: 20px;
+    }
+    a.active,a:hover
+    {
+        background: none;
+        color:orangered;
+    }
+}

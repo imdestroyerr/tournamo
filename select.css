@@ -1,0 +1,24 @@
+select.design
+{
+    width: 400px;
+    height: 30px;
+    background:linear-gradient(to right,orange,red);   
+}
+
+@media only screen and (max-width: 1000px){    
+    body{
+        transform: scale(0.9);
+    }
+
+    .select-options select{
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    select{
+        display: block;
+        width: 100%;
+    }
+}
+
+  
